@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- We can use either id/name identifier or both, but identifier value 
+		must be unique for every bean in container -->
+	<bean id="demo" class="spring.start.basic.DemoBean">
+		<property name="number" value="1234" />
+		<property name="name" value="vishal bala" />
+		<property name="age" value="22.5" />
+		<property name="bool" value="true" />
+	</bean>
+<!-- 	<bean name="secondDemo" class="spring.start.basic.DemoBean">
+		<property name="number" value="9854" />
+		<property name="name" value="Thomas shelby" />
+		<property name="age" value="45" />
+		<property name="bool" value="true" />
+	</bean> -->
+
+	<!-- If you want to introduce other aliases for the bean, you can also specify 
+		them in the name attribute, separated by a comma (,), semicolon (;), or white 
+		space. -->
+
+	<!-- In XML-based configuration metadata, you can use the <alias/> element 
+		to accomplish this. -->
+		
+	<alias name="demo" alias="first"/>
+
+</beans>

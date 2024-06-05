@@ -1,0 +1,8 @@
+ * Beans that are  singleton-scoped and set to be pre-instantiated (the default) are 
+ 	created when the container is created. Otherwise, the bean is created only when it 
+ 	is requested
+ 	
+ *  Spring treats empty arguments for properties and the like as empty Strings.
+ 	 
+ *	 The <null/> element handles null values. The following listing shows an example
+ 	

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="first" class="spring.injections.setterInjection.AnotherBean"/>
+	
+	<bean id="second" class="spring.injections.setterInjection.YetAnotherBean"/>
+	
+<!-- 	<bean id="third" class="spring.injections.setterInjection.ExampleBean">
+		<property name="beanOne" ref="first" />
+		<property name="beanTwo" ref="second" />
+		<property name="i" value="123" />
+	</bean> -->
+	
+	<!-- static factory method -->
+	
+	<bean id="third" class="spring.injections.setterInjection.ExampleBean"
+		factory-method="createInstance"
+	>
+		<constructor-arg name="beanOne" ref="first" />
+		<constructor-arg name="beanTwo" ref="second" />
+		<constructor-arg name="i" value="123" />
+	</bean>
+
+
+</beans>

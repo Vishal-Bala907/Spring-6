@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- When defining a bean that you create with a static factory method, 
+		use the class attribute to specify the class that contains the static factory 
+		method and an attribute named factory-method to specify the name of the factory 
+		method itself -->
+
+	<bean id="facDemo"
+		class="spring.start.staticFactoryMethod.StaticFactoryMethodClass"
+		factory-method="createInstance">
+
+		<property name="prop1">
+			<value>1234</value>
+		</property>
+		<property name="prop2">
+			<value>vishal bala</value>
+		</property>
+		
+		
+		
+
+	</bean>
+
+</beans>

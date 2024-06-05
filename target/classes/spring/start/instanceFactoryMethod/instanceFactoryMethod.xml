@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="beanCreator"
+		class="spring.start.instanceFactoryMethod.InstanceFactoryMethodClass">
+	</bean>
+	<!-- To use this mechanism, leave the class attribute empty and, in the 
+		factory-bean attribute, specify the name of a bean in the current (or parent 
+		or ancestor) container that contains the instance method that is to be invoked 
+		to create the object. Set the name of the factory method itself with the 
+		factory-method attribute. The following example shows how to configure such 
+		a bean -->
+
+	<bean id="bean1Invoker" factory-bean="beanCreator"
+		factory-method="getBean1">
+
+		<property name="id" value="123"></property>
+
+	</bean>
+
+	<bean id="bean2Invoker" factory-bean="beanCreator"
+		factory-method="getBean2">
+		<property name="name" value="vishal bala"></property>
+
+	</bean>
+
+</beans>

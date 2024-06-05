@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="collection" class="spring.collection.MyCollections">
+		<property name="list">
+			<list>
+				<value>Vishal Bala</value>
+				<value>Thomas shelby</value>
+				<value>Arthr shelby</value>
+				<value>jhon shelby</value>
+			</list>
+		</property>
+
+		<property name="set">
+			<set>
+				<value>Poll</value>
+				<value>Ada</value>
+				<value>Finn</value>
+			</set>
+		</property>
+
+		<property name="map">
+			<map>
+				<entry key="1" value="Curly" />
+				<entry key="2" value="Charlie" />
+				<entry key="3" value="Danny" />
+				<entry key="4" value="Freddie" />
+			</map>
+		</property>
+
+	</bean>
+
+</beans>

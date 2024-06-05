@@ -1,0 +1,19 @@
+page no. -> 42   * Nested class names
+page no. -> 53   * Constructor-based or setter-based DI? 
+			     * Dependency Resolution Process
+page no. -> 54   * circular dependency problem	
+page no. -> 59   * "idref" element
+page no. -> 63   * collection merging	   
+page no. -> 68   * depends-on	   
+page no. -> 69   * lazy initialization (lazy-init = "true")
+page no. -> 70   * Autowiring collaborators
+page no. -> 72   * Method injection
+page no. -> 74   * Lookup Method Injection
+page no. -> 80   * Bean Scopes
+page no. -> 93   * Customizing the Nature of a Bean
+page no. -> 98   *  Default Initialization and Destroy Methods
+page no. -> 101  *  Shutting Down the Spring IoC Container Gracefully in Non-Web Applications
+page no. -> 102  *  ApplicationContextAware and BeanNameAware
+page no. -> 106  *  3.1.8. Container Extension Points
+
+page no. -> 115  *  Annotation-based Container Configuration
