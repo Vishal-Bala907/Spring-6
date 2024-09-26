@@ -12,7 +12,7 @@
 		or ancestor) container that contains the instance method that is to be invoked 
 		to create the object. Set the name of the factory method itself with the 
 		factory-method attribute. The following example shows how to configure such 
-		a bean -->
+		a bean --> 
 
 	<bean id="bean1Invoker" factory-bean="beanCreator"
 		factory-method="getBean1">

@@ -17,3 +17,9 @@ page no. -> 102  *  ApplicationContextAware and BeanNameAware
 page no. -> 106  *  3.1.8. Container Extension Points
 
 page no. -> 115  *  Annotation-based Container Configuration
+page no. -> 122  *  @Autowired(required = false)
+page no. -> 124  *  Fine-tuning Annotation-based Autowiring with @Primary
+
+
+page no. -> 150  *  Automatically Detecting Classes and Registering Bean Definitions
+page no. -> 154  *  Defining Bean Metadata within Components

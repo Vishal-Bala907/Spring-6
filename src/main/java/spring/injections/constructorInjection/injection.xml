@@ -34,7 +34,7 @@
 	<!-- When a simple type is used, such as <value>true</value>, Spring cannot 
 		determine the type of the value, and so cannot match by type without help. 
 		Consider the following class -->
-<!-- ********************************************************************************** -->
+	<!-- ********************************************************************************** -->
 
 
 	<!-- Using the type attribute -->
@@ -52,7 +52,7 @@
 	</bean>
 
 
-<!-- ************************************************************************  -->
+	<!-- ************************************************************************ -->
 
 	<!-- Constructor argument name You can also use the constructor parameter 
 		name for value disambiguation, as the following example shows: -->
